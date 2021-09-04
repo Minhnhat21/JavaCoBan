@@ -17,4 +17,7 @@ public class Contact {
         this.name = name;
         this.number = number;
     }
+    public void Call() {
+        System.out.println("call tank");
+    }
 }
