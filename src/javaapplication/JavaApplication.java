@@ -14,18 +14,6 @@ import java.util.*;
 public class JavaApplication {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int size = sc.nextInt();
-        int[] numofcompany = new int[size];
-        int[] pecentTax = new int[size];
-        int tax;
-        int mostTaxt;
-        int pos;
-        
-        for (int i = 0; i < size; i++){
-           numofcompany[i] = sc.nextInt(); 
-        }
-        for (int i = 0; i < size; i++){
-           pecentTax[i] = sc.nextInt(); 
-        }
+        System.out.println("Hello Java");
     }
 }
