@@ -22,8 +22,9 @@ public class LoanPayment {
         
         double monthlyPayment;
         monthlyPayment = (loanAmount * monthlyInterestRate) 
-                            / (1 - (1/(Math.pow( 1+monthlyInterestRate, numberOfYear * 12))));
-        System.out.println("Monthly payment: " + monthlyPayment);
+                            / (1 - (1/(Math.pow( 1 + monthlyInterestRate, numberOfYear * 12))));
+        
+        System.out.println("Monthly payment: " + Math.round(monthlyPayment * 1000.0)/1000.0 );
     }
  
 }

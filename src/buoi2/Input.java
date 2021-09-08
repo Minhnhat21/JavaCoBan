@@ -11,10 +11,14 @@ package buoi2;
  */
 import java.util.Scanner;
 public class Input {
+    final static double PI = 3.14159;
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter a double value: ");
-        double d = sc.nextDouble();
-        System.out.println(d);
+        System.out.println("Enter a Radius value: ");
+        double radius = sc.nextDouble();
+        double area;
+        area = radius * radius * PI ;
+        
+        System.out.println("The area for the circle of radius "+ radius + " is " + area);
     }
 }
