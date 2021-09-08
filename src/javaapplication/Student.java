@@ -11,5 +11,6 @@ import java.util.Scanner;
  */
 public class Student {
     Scanner sc = new Scanner(System.in);
-    int acount = sc.nextInt();
+    int account = sc.nextInt();
+    System.out.println(account);
 }
