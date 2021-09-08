@@ -9,14 +9,23 @@ package javaapplication;
  *
  * @author nguye
  */
-public class JavaApplication {
+import java.util.*;
 
-    /**
-     * @param args the command line arguments
-     */
+public class JavaApplication {
     public static void main(String[] args) {
-        System.out.println("Hello World");
-        System.out.println("Pull file");
+        Scanner sc = new Scanner(System.in);
+        int size = sc.nextInt();
+        int[] numofcompany = new int[size];
+        int[] pecentTax = new int[size];
+        int tax;
+        int mostTaxt;
+        int pos;
+        
+        for (int i = 0; i < size; i++){
+           numofcompany[i] = sc.nextInt(); 
+        }
+        for (int i = 0; i < size; i++){
+           pecentTax[i] = sc.nextInt(); 
+        }
     }
-    
 }
