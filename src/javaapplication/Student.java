@@ -10,7 +10,6 @@ import java.util.Scanner;
  * @author nguye
  */
 public class Student {
-    Scanner sc = new Scanner(System.in);
-    int account = sc.nextInt();
-    System.out.println(account);
+    private String name;
+    private int age;
 }
