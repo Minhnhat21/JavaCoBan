@@ -24,9 +24,9 @@ public class BMI {
 
         if (BMI < 18.5) {
             System.out.println("UnderWeight");
-        } else if (BMI >= 18.5 && BMI <= 25.0) {
+        } else if ((BMI >= 18.5) && (BMI <= 25.0)) {
             System.out.println("Normal");
-        } else if (BMI >= 25.0 && BMI <= 30.0) {
+        } else if ((BMI >= 25.0) && (BMI <= 30.0)) {
             System.out.println("OverWeight");
         } else {
             System.out.println("Obese");

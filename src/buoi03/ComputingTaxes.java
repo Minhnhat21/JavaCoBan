@@ -13,14 +13,14 @@ import java.util.Scanner;
 public class ComputingTaxes {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        final int single = 1;
-        final int marriedFilingJointly = 2;
-        final int marriedFilingSeparately = 3;
-        final int heafOfHoldhouse = 4;
+        final int SIMGLE = 1;
+        final int MARRIEDFILINGJOINTLY = 2;
+        final int MARRIEDFILINGSEPARATELY = 3;
+        final int HEADOFHOLDHOUSE = 4;
         double tax = 0.0;
         System.out.print("Enter status: ");
         int status = sc.nextInt();
-        if (status == single) {
+        if (status == SIMGLE) {
             System.out.print("Enter your income ");
             double income = sc.nextDouble();
             if(income >= 0 && income <= 8.350) {
@@ -42,7 +42,7 @@ public class ComputingTaxes {
                 tax = income * 35/100;
                 System.out.println("tax: "+ Math.round(tax*100.0)/100.0);
             }    
-        } else if (status == marriedFilingJointly) {
+        } else if (status == MARRIEDFILINGJOINTLY) {
             System.out.print("Enter your income ");
             double income = sc.nextDouble();
             if(income >= 0 && income <= 16.700) {
@@ -64,7 +64,7 @@ public class ComputingTaxes {
                 tax = income * 35/100;
                 System.out.println("tax: "+ Math.round(tax*100.0)/100.0);
             }
-        } else if (status == marriedFilingSeparately) {
+        } else if (status == MARRIEDFILINGSEPARATELY) {
             System.out.print("Enter your income ");
             double income = sc.nextDouble();
             if(income >= 0 && income <= 8.350) {
@@ -86,7 +86,7 @@ public class ComputingTaxes {
                 tax = income * 35/100;
                 System.out.println("tax: "+ Math.round(tax*100.0)/100.0);
             }
-        } else if (status == heafOfHoldhouse) {
+        } else if (status == HEADOFHOLDHOUSE) {
             System.out.print("Enter your income ");
             double income = sc.nextDouble();
             if(income >= 0 && income <= 11.950) {
