@@ -28,7 +28,7 @@ public class Bai06 {
                 double x2;
                 System.out.println("Phương trình có 2 nghiệm phân biệt");
                 x1 = (double) (-b + Math.sqrt(delta)) / (2.0*a); 
-                x2 = (double) (b + Math.sqrt(delta)) / (2.0*a);
+                x2 = (double) (-b - Math.sqrt(delta)) / (2.0*a);
                 System.out.println("x1 = " + x1 +"\n" + "x2 = " + x2);
             } else if (delta == 0) {
                 System.out.println("Phương trình có nghiệm duy nhất");
