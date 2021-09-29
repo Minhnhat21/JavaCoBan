@@ -3,18 +3,19 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Baitap.BaitapPhien2;
+package Baitap.Baitapphien3;
 
 /**
  *
  * @author nguye
  */
 import java.util.Scanner;
-public class Bai03 {
+public class Bai02 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.print("Enter a year: ");
-        int year = sc.nextInt();
-        System.out.println(((year % 4 == 0 && year % 100 != 0) || year % 400 == 0) ? (year + " is a Leap year") : (year + " is not leap year"));
+        System.out.print("Input a value for inch: ");
+        double inches = sc.nextDouble();
+        double meters = inches * 0.0254;
+        System.out.println(Math.round(inches*10)/10.0 + " inch is " + Math.round(meters*10)/10.0 + " meters");
     }
 }
