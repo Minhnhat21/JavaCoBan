@@ -3,15 +3,19 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Buoi6.BaiTapPhien1;
+package Buoi6.Baitapphiien2;
 
 /**
  *
  * @author nguye
  */
-public class Bai07 {
+import java.util.Scanner;
+public class Bai03 {
     public static void main(String[] args) {
-        int n = 10, firstNum = 0, secondNum = 1;
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a number: ");
+        int n = sc.nextInt();
+        int firstNum = 0, secondNum = 1;
         System.out.println("Fibonacci Series till " + n + " terms:");
 
         for (int i = 1; i <= n; ++i) {
