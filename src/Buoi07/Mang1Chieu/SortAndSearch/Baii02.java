@@ -11,22 +11,31 @@ package Buoi07.Mang1Chieu.SortAndSearch;
  */
 import java.util.Random;
 import java.util.Scanner;
-public class Bai01 {
-    public static void main(String[] args) {
-        // TODO Auto-generated method stub
-	Scanner input = new Scanner(System.in);
-	int n;
-	int soCanTim;
-	System.out.println("Nhap so phan tu cua mang");
-	n = input.nextInt();
-	int[] arr;
+public class Baii02 {
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner input = new Scanner(System.in);
+		int n;
+		int soCanTim;
+		System.out.println("Nhap so phan tu cua mang");
+		n = input.nextInt();
+		int[] arr;
 		
-	arr = InputArray(n);
-	System.out.println("Nhap so can tim`: ");
-	soCanTim = input.nextInt();
-	Search(arr,n,soCanTim);
-    }
-    public static int[] InputArray(int n) {
+		arr = NhapMang(n);
+		
+		System.out.println("Nhap so can tim`: ");
+		soCanTim = input.nextInt();
+		
+		int[] arrRes = TimKiem(arr, n, soCanTim);
+		
+		System.out.println();
+		for(int i = 0; i < n ; i++) {
+			System.out.print(arrRes[i] + " ");
+		}
+	}
+        
+        public static int[] NhapMang(int n) {
 		Scanner input = new Scanner(System.in);
 		int[] arr = new int[n];
 		Random rand = new Random();
@@ -41,18 +50,21 @@ public class Bai01 {
 		
 		return arr;
 	}
-	
-	public static void Search(int[] arr, int n, int soCanTim) {
+
+	public static int[] TimKiem(int[] arr, int n, int soCanTim) {
 		boolean daTimDc = false;
+		int[] arrResult = new int[n];
 		for(int i = 0; i < n; i++) {
 			if(arr[i] == soCanTim) {
-				System.out.println("Vi tri xuat hien la`: " + i);
+				arrResult[i] = i;
 				daTimDc = true;
-				break;
 			}
 		}
-		if(!daTimDc)
-			System.out.println(-1);
+		
+		return arrResult;
 		
 	}
+	
+	
+
 }
